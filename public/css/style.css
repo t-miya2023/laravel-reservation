@@ -121,7 +121,6 @@ th{
 }
 
 .mv-thx-typing {
-    opacity: 1; /* 最初は不透明度を0に設定 */
     z-index: 100;
     color:white;
     font-size:3rem;
@@ -286,5 +285,8 @@ h4{
         position: absolute;
         left:-100px;
         bottom:1rem;
+    }
+    .mv-thx-typing{
+        font-size:2rem;
     }
 }
