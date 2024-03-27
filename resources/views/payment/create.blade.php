@@ -47,7 +47,6 @@
         const stripe_public_key = "{{ config('stripe.stripe_public_key') }}"
         const stripe = Stripe(stripe_public_key);
         const elements = stripe.elements();
-
         var cardNumber = elements.create('cardNumber');
         cardNumber.mount('#card-number');
         cardNumber.on('change', function(event) {

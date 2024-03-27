@@ -25,6 +25,7 @@ let adminCalendar = new Calendar(CalendarEl, {
     navLinks: false,
     businessHours: true,
     showNonCurrentDates: false, 
+    selectLongPressDelay:0,
     slotMinTime: '12:00:00',
     allDaySlot: false,
     events: function(info,successCallback, failureCallback){

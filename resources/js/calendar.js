@@ -28,6 +28,7 @@ window.addEventListener('load', function(){
         timeZone: 'Asia/Tokyo',
         businessHours: true, 
         selectable: true,
+        selectLongPressDelay:0,
         validRange:{
             //カレンダーの範囲、今月の1日から3ヶ月後の月末まで
             start: nowDate.getFullYear() + '-' + ('0' + (nowDate.getMonth()+1)).slice(-2) + '-' + '01',
@@ -109,7 +110,7 @@ window.addEventListener('load', function(){
         selectConstraint:{
             start:nowDate.getFullYear() + '-' + ('0' + (nowDate.getMonth() + 1)).slice(-2) + '-' + ('0' + nowDate.getDate()).slice(-2),
             end:allowEndDate.getFullYear() + '-' + ('0' + (allowEndDate.getMonth() + 1)).slice(-2) + '-' + ('0' + allowEndDate.getDate()).slice(-2)
-        }
+        },
 
     });
     calendar.render();
