@@ -52,8 +52,8 @@
 
     @guest
     <div class="container text-center">
-        <h2 class="my-5 heading-font">Registration & Login</h2>
-        <p class="text-center fs-3 m-3 font">まずはこちらから登録してください</p>
+        <h2 class="my-5 heading-font-2">Registration <br>& Login</h2>
+        <p class="text-center fs-3 m-3 font">まずはこちらからご登録してください</p>
         <div class="row my-5">
             <div class="col-12 d-flex justify-content-center">
             <a class="btn btn-outline-primary btn-block mx-2 btn-lg" href="{{ route('register') }}">{{ __('Register') }}</a>

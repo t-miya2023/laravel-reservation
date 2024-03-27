@@ -153,6 +153,32 @@ th{
     right:-220px;
     bottom:1.5rem;
 }
+.heading-font-2{
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+    color:#707070;
+    font-size:3rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.heading-font-2::before{
+    content:"";
+    background-color:#707070;
+    width: 200px;
+    height:1px;
+    position: absolute;
+    left:-220px;
+    bottom:3rem;
+}
+.heading-font-2::after{
+    content:"";
+    background-color:#707070;
+    width: 200px;
+    height:1px;
+    position: absolute;
+    right:-220px;
+    bottom:3rem;
+}
 .font{
     font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
     color:#707070;
@@ -286,6 +312,28 @@ h4{
         left:-100px;
         bottom:1rem;
     }
+    .heading-font-2{
+        font-size:2rem;
+    }
+    .heading-font-2::after{
+        content:"";
+        background-color:#707070;
+        width: 80px;
+        height:1px;
+        position: absolute;
+        right:-100px;
+        bottom:2rem;
+    }
+    .heading-font-2::before{
+        content:"";
+        background-color:#707070;
+        width: 80px;
+        height:1px;
+        position: absolute;
+        left:-100px;
+        bottom:2rem;
+    }
+    
     .mv-thx-typing{
         font-size:2rem;
     }

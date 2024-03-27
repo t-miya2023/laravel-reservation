@@ -6,6 +6,7 @@ use App\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 class RedirectIfAuthenticated
@@ -22,13 +23,12 @@ class RedirectIfAuthenticated
         //認証済みならホームにリダイレクトする
         foreach ($guards as $guard) {
             if ($guard == "admin" && Auth::guard($guard)->check()) { 
-                return redirect('admin/home');
+                return redirect('dashboard');
             }
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                return redirect('/');
             }
         }
-
         return $next($request);
     }
 }

@@ -29,7 +29,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 /*
 |--------------------------------------------------------------------------
 | Admin Routes
@@ -39,9 +39,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::view('/admin/login', 'admin/login');
 Route::post('/admin/login', [LoginController::class, 'login']);
 Route::post('admin/logout', [LoginController::class,'logout'])->name('admin.logout');
-Route::view('/admin/register', 'admin/register');
-Route::post('/admin/register', [RegisterController::class, 'register']);
-Route::view('/admin/home', 'admin/home')->middleware('auth:admin');
+//Route::view('/admin/register', 'admin/register');
+//Route::post('/admin/register', [RegisterController::class, 'register']);
+//Route::view('/admin/home', 'admin/home')->middleware('auth:admin');
 
 /*
 |--------------------------------------------------------------------------

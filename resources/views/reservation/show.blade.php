@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-    <h2 class="mb-3">予約確認</h2>
+    <h2 class="mb-3 heading-2">予約確認</h2>
     <div class="row justify-content-center">
         <div class="col-10 d-flex flex-column">
             <div class="mb-3">
