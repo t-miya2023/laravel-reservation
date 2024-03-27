@@ -1,0 +1,290 @@
+
+body{
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+
+.bg-color{
+    background-image: linear-gradient(133deg, rgba(14, 244, 255, 1), rgba(240, 244, 245, 1) 50%);
+}
+th{
+    padding-right:10px;
+}
+
+/*-----------------------------------------*/
+.mw-800{
+    max-width:800px;
+    width: 100%;
+}
+.room-img{
+    object-fit: cover;
+    object-position: center !important;
+    width:100%;
+    height:100%;
+}
+.room-img-box{
+    height: 185px !important;
+    overflow: hidden;
+}
+.bg-gray{
+    background-color: #F8FAFC !important;
+}
+.min-height{
+    min-height: calc(100vh -  60px) !important;
+    box-sizing: border-box;
+}
+
+.absolute{
+    width:200px !important;
+    display: inline-block !important;
+    position: absolute !important;
+    top:-20px !important;
+}
+
+.full-reservation{
+    background-color: red !important;
+    text-align: center !important;
+}
+
+.available{
+    text-align: center !important;
+}
+
+.user-table td{
+    padding: 20px 0;
+    margin:0 10px;
+}
+
+.user-table th{
+    white-space: nowrap;
+}
+
+.reservation-table th,.reservation-table td{
+    padding:10px 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+.reservation-table {
+    width: 100%;
+    table-layout: fixed;
+    width:1200px !important;
+    overflow-x: auto; /* 横幅がコンテナを超えたらスクロールバーを表示 */
+    margin: 0 auto; /* ページ中央に配置 */
+}
+.show-table th , .show-table td{
+    font-size:1rem;
+}
+.show-table th {
+    white-space: nowrap;
+    padding-right:20px;
+}
+.top-slider{
+    height:600px;
+    overflow:hidden;
+}
+
+.top-slider img{
+    height: 600px; 
+    object-fit: cover; 
+    object-position: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+/*ページネーションの不要な箇所消しています*/
+.text-muted{
+    display:none;
+}
+
+.fc-daygrid-event-dot{
+    display: none;
+}
+.fc-daygrid-event{
+    background-color: #3788D8;
+}
+.fc-daygrid-event:hover{
+    opacity: 0.8 !important;
+}
+.fc-daygrid-dot-event:hover{
+    background-color: #3788D8 !important;
+}
+
+.fc-event-time,.fc-event-title{
+    color: #F0F4F5;
+}
+
+.mv-thx {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.mv-thx-typing {
+    opacity: 1; /* 最初は不透明度を0に設定 */
+    z-index: 100;
+    color:white;
+    font-size:3rem;
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.heading-font{
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+    color:#707070;
+    font-size:3rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.heading-font::before{
+    content:"";
+    background-color:#707070;
+    width: 200px;
+    height:1px;
+    position: absolute;
+    left:-220px;
+    bottom:1.5rem;
+}
+.heading-font::after{
+    content:"";
+    background-color:#707070;
+    width: 200px;
+    height:1px;
+    position: absolute;
+    right:-220px;
+    bottom:1.5rem;
+}
+.font{
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+    color:#707070;
+    font-size:2rem;
+}
+.heading-2{
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+    color:#707070;
+    font-size:2rem;
+    position: relative;
+    display: inline-block
+}
+.heading-2::before{
+    content: "";
+    width: 20px;
+    height:20px;
+    background-color: #3788D8;
+    position: absolute;
+    transform: rotate(45deg);
+    left:-30px;
+    bottom:10px;
+}
+
+.heading-3{
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+    color:#707070;
+    font-size:1.5rem;
+    position: relative;
+    display: inline-block
+}
+
+.heading-3::before{
+    content: "";
+    width: 15px;
+    height:15px;
+    background-color: #FCCA2C;
+    position: absolute;
+    transform: rotate(45deg);
+    left:-30px;
+    bottom:8px;
+}
+
+
+.price-table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+.price-table th, .price-table td{
+    border: 1px solid #000; /* ボーダーの設定 */
+    padding: 8px;
+    text-align: center;
+}
+.price-table th{
+    background-color: #f2f2f2;
+}
+.price-table td{
+    background-color: #fff;
+}
+h4{
+    color:#707070;
+    font-size:1.75rem;
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    background-color: #D7F4F6;
+    padding:12px 0;
+}
+.card-title::before{
+    content:"";
+    display: inline-block;
+    background-color: #3788D8;
+    width: 9px;
+    height: 20px;
+    margin-right: 24px;
+}
+
+.five-people{
+    background-color: orange !important;
+}
+.five-people:hover{
+    background-color: orange !important;
+    opacity: 0.8 !important;
+}
+
+.ten-people{
+    background-color: red !important;
+}
+
+.ten-peoplehover{
+    background-color: red !important;
+    opacity: 0.8 !important;
+}
+
+.color-span{
+    width:10px;
+    height:10px;
+    margin-right:10px;
+    background-color: #3788D8;
+    transform: translateY(5px);
+}
+
+.color-text{
+    margin-right:20px;
+}
+
+@media screen and (max-width:768px) { 
+    .room-img-box{
+        height: 300px !important;
+    }
+    .heading-font{
+        font-size:2rem;
+    }
+    .heading-font::after{
+        content:"";
+        background-color:#707070;
+        width: 80px;
+        height:1px;
+        position: absolute;
+        right:-100px;
+        bottom:1rem;
+    }
+    .heading-font::before{
+        content:"";
+        background-color:#707070;
+        width: 80px;
+        height:1px;
+        position: absolute;
+        left:-100px;
+        bottom:1rem;
+    }
+}
