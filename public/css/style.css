@@ -189,7 +189,8 @@ th{
     color:#707070;
     font-size:2rem;
     position: relative;
-    display: inline-block
+    display: inline-block;
+    margin-left:20px;
 }
 .heading-2::before{
     content: "";

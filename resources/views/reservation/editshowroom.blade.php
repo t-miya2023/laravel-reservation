@@ -10,7 +10,7 @@
 <!--1部屋の場合------------------------------------------------------------------------------------------>
                 @if($roomNumber  == 1)
                     @foreach ($reservation->reservation_details as $key => $detail)
-                    <div class="row bg-white p-3 mb-3 mw-800 border border-warning border-3 position-relative room" data-capacity="{{ $detail->room->capacity }}">
+                    <div class="row bg-white p-3 mb-3 mw-800 border border-warning border-3 position-relative room now-room" data-capacity="{{ $detail->room->capacity }}">
                         <p class="fs-5 bg-white border border-warning border-3 absolute text-center">現在予約中の部屋</p>
                         <div class="d-flex justify-content-between border-bottom mb-2">
                             <h3>{{ $detail->room->name }}</h3> 

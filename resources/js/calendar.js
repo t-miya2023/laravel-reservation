@@ -95,8 +95,6 @@ window.addEventListener('load', function(){
                     var roomCount = data.roomCount || 0;
                     var detailsCountMap = data.detailsCountMap || {};
                     var checkinCount = detailsCountMap[selectedDate] || 0;
-                    console.log('部屋' + roomCount);
-                    console.log('予約' + checkinCount);
                     if(roomCount === checkinCount) {
                         alert('選択された日付は満室です。');
                     }else{

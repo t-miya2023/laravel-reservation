@@ -44,12 +44,6 @@ function filterRoom(){
                 }
             }
         }
-        console.log("宿泊人数："+total);
-        console.log("ターゲット："+targetCapacity);
-        console.log("表示している部屋の最大収容数："+availableRoomCapa);
-        console.log("存在する部屋の最大収容数："+maxCapacity);
-        console.log("表示している部屋数："+reservedRoomsCount);
-        console.log("total-1:"+ (total -1));
 }
 /*=======================ロード時の絞り込み========================================*/
     document.addEventListener('DOMContentLoaded', function() {

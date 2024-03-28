@@ -1,9 +1,9 @@
 function filterRoom(){
     var roomFound = false; //適切な部屋を表示できているか判定するため
-        var targetCapacity = total - 1; //total - 1がなければ１づつ増やし再検索
-        var availableRoomCapa = 0; //表示している部屋の最大収容数
-        var reservedRoomsCount = 0; // 予約された部屋の数をカウントする変数
-        var maxCapacity = Math.max(...Array.from(document.querySelectorAll('.room'), room => parseInt(room.dataset.capacity)));
+    var targetCapacity = total - 1; //total - 1がなければ１づつ増やし再検索
+    var availableRoomCapa = 0; //表示している部屋の最大収容数
+    var reservedRoomsCount = 0; // 予約された部屋の数をカウントする変数
+    var maxCapacity = Math.max(...Array.from(document.querySelectorAll('.room'), room => parseInt(room.dataset.capacity)));
 
         //必要最低限の部屋を表示する（２人に対して１０人部屋を表示させない）
         while(!roomFound && targetCapacity <= maxCapacity){
@@ -45,15 +45,10 @@ function filterRoom(){
                 }
             }
         }
-        console.log("宿泊人数："+total);
-        console.log("ターゲット："+targetCapacity);
-        console.log("表示している部屋の最大収容数："+availableRoomCapa);
-        console.log("total-1:"+ (total -1));
         //2部屋以上から１部屋に変更された時
         if( maxSelectedRooms <= 1){
-            document.querySelectorAll('.room').forEach(function(room) { 
+            document.querySelectorAll('.now-room').forEach(function(room) { 
                 var roomCapacity = parseInt(room.dataset.capacity);
-                console.log("定員：" + roomCapacity);
                 if( roomCapacity < total){
                     room.style.display = 'none'; // 部屋を非表示
                 }else{

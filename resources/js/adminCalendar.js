@@ -67,7 +67,6 @@ let adminCalendar = new Calendar(CalendarEl, {
     },
     eventClick: (e)=>{// イベントのクリックイベント
         var selectedReservation = e.event.id;
-        console.log(e.event.id);
         window.location.href = `dashboard/reservation/${selectedReservation}`;
 	}
 });

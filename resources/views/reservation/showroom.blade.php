@@ -68,7 +68,8 @@
             <form  id="roomField"action="{{ route('reservation.confirm') }}" method="post">
             @foreach ($availableRooms as $key => $room)
             @csrf
-                    <div class="row bg-white p-3 mb-3 mw-800 room" data-capacity="{{ $room->capacity }}">
+                    <div class="row bg-white p-3 mb-3 mw-800 room
+                    " data-capacity="{{ $room->capacity }}">
                         <div class="d-flex justify-content-between border-bottom mb-2">
                             <h3 class="heading-3 mx-3">{{ $room->name }}</h3>  
                             <a class="btn btn-primary" href="{{ route('room.show',$room->id)  }}">詳細確認</a>
@@ -125,7 +126,7 @@
                 <input type="hidden" name="reservation_type" value="multi">
                 <div id="error-message2" style="color: red;"></div>
                 <button class="btn btn-primary submit-btn" type="submit" disabled>選択した部屋で予約する</button>
-                </form>
+            </form>
             @endif
         </div>
     </div>
